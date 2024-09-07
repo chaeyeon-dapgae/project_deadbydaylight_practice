@@ -1,0 +1,904 @@
+/* style.css */
+/* CDN - Xeicon */
+@import url("https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css");
+
+/* ########## main ########## */
+.mnWrap {
+  background: url('../img/main.jpg') no-repeat center center;
+  background-size: cover;
+  height: 100vh;
+  position: relative;
+}
+.mnWrap:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000 5%, transparent 20%);
+  top: 0;
+  left: 0;
+}
+main {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+main .logo {}
+main .logo img {
+  width: 260px;
+  animation: opacity 2s linear infinite both;
+}
+main .heading {
+  margin-top: 50px;
+  animation: totop 1s linear 2s both;
+}
+main .heading a {
+  font-family: 'Creepster', 'Noto Sans KR', sans-serif;
+  display: inline-block;
+  width: 260px;
+  height: 50px;
+  line-height: 50px;
+  font-size: 24px;
+  background: linear-gradient(45deg, #401b1b 60%, #691c1b 40%);
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* ########## banWrap ########## */
+.banWrap {
+  background: url('../img/banner01.jpg') no-repeat center 80%;
+  background-size: cover;
+  padding: 100px;
+  position: relative;
+  margin: 150px 0;
+}
+.banWrap:before {
+  content: '';
+  display: block;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to top, #000 10%, transparent 20%);
+  top: 0;
+  left: 0;
+  position: absolute;
+}
+.text {}
+.text img {
+  filter: invert(1);
+  width: 280px;
+}
+.text p {
+  color: #801313;
+  line-height: 50px;
+  font-size: 24px;
+  font-weight: 700;
+  text-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+/* ########## content_playerWrap ########## */
+.playerWrap {
+  position: relative;
+  overflow: hidden;
+}
+.playerWrap:before {
+  content: '';
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url('../img/fog.png') no-repeat center center;
+  background-size: 120% 80%;
+  transform: rotateX(180deg) rotateY(180deg);
+  opacity: 0.4;
+  z-index: -1;
+}
+.player section {
+  margin-top: 100px;
+  overflow: hidden;
+  display: flex;
+  flex-wrap: wrap;
+}
+.btns-player {
+  text-align: center;
+  width: 100%;
+}
+.btns-player a {
+  width: 240px;
+  font-size: 24px;
+  font-weight: 700;
+  padding: 0 20px;
+  line-height: 50px;
+  text-transform: capitalize;
+  display: inline-block;
+  margin: 0 20px;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.btns-player a span {
+  display: block;
+}
+.btns-player a:first-child {
+  background-color: crimson;
+}
+.btns-player a:last-child {
+  background-color: dodgerblue;
+}
+.btns-player a.focus {
+  opacity: 1;
+}
+.player article {
+  width: 50%;
+  float: left;
+  margin-top: 25px;
+}
+.player article > div {
+  opacity: 0.4;
+  transition: 0.5s;
+  display: flex;
+  align-items: end;
+  height: 100%;
+}
+.player article > div.focus {
+  opacity: 1;
+}
+.player article > div img {
+  width: 100%;
+  display: block;
+}
+/* ########## content_baseCharacterWrap ########## */
+.base-character header p {
+  font-size: 24px;
+  font-weight: 700;
+  color: crimson;
+  line-height: 50px;
+  margin: 50px 0;
+}
+.base-character .btns-character {
+  display: flex;
+  justify-content: center;
+}
+.base-character .btns-character button {
+  width: 240px;
+  line-height: 50px;
+  font-weight: 700;
+  text-transform: uppercase;
+  border-radius: 10px 10px 0 0;
+  font-size: 24px;
+  color: #fff;
+  display: block;
+  cursor: pointer;
+  opacity: 0.25;
+  transition: 0.35s;
+}
+.base-character .btns-character button:first-child {
+  background-color: crimson;
+}
+.base-character .btns-character button:last-child {
+  background-color: dodgerblue;
+} 
+.base-character .btns-character button.focus {
+  opacity: 1;
+}
+.characGroup > div .killer,
+.characGroup > div .survivor {
+  position: relative;
+  padding: 100px 0;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+}
+.killerGroup .huntress {
+  background-image: url('../img/huntress-bg.jpg');
+}
+.killerGroup .nurse {
+  background-image: url('../img/nurse-bg.jpg');
+}
+.killerGroup .trapper {
+  background-image: url('../img/trapper-bg.jpg');
+}
+.characGroup > div .killer:before,
+.characGroup > div .survivor:before {
+  content: '';
+  width: 100%;  
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+.characGroup .intro {
+  position: relative;
+  height: 700px;
+}
+.characGroup .intro img {
+  width: 50%;
+  position: absolute;
+  right: 0;
+  z-index: 1;
+  bottom: 0;
+}
+.nurse .intro img,
+.claudette .intro img,
+.meg .intro img {
+  left: 0;
+}
+.characGroup .intro .texts {
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  padding: 50px;
+  position: absolute;
+  bottom: 0;
+  font-weight: 300;
+}
+.characGroup .texts h4 {
+  color: crimson;
+  line-height: 50px;
+  font-size: 48px;
+  margin-bottom: 10px;
+  width: 100%;
+  position: absolute;
+  bottom: 100%;
+  left: 0;
+}
+.nurse .texts h4,
+.claudette .texts h4,
+.meg .texts h4 {
+  text-align: right;
+}
+.characGroup .texts p {
+  width: 50%;
+}
+.nurse .intro .texts p,
+.claudette .texts p,
+.meg .texts p {
+  text-align: right;
+  margin-left: auto;
+}
+.nurse .texts .details,
+.claudette .texts .details,
+.meg .texts .details {
+  margin-left: auto;
+  text-align: right;
+}
+.characGroup .texts .details {
+  margin-top: 100px;
+}
+.characGroup .intro .details > div {
+  font-weight: 700;
+  display: inline-block;
+  position: relative;
+  text-align: center;
+  margin: 0 20px;
+}
+.characGroup .intro .details > div:before {
+  content: '';
+  display: block;
+  height: 50px;
+  width: 50px;
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: cover;
+  position: absolute;
+  left: 50%;
+  bottom: 100%;
+  transform: translateX(-50%);
+}
+.characGroup .intro .details > div:nth-child(1):before {
+  background-image: url('../img/role.png');
+}
+.characGroup .intro .details > div:nth-child(2):before {
+  background-image: url('../img/difficulty.png');
+  width: 110px;
+}
+.characGroup .intro .details > div:nth-child(3):before {
+  background-image: url('../img/chapter.png');
+}
+.characGroup .intro .details > div img {
+  display: block;
+}
+.characGroup .intro .details > div span {
+  font-weight: 300;
+  color: #777;
+  display: block;
+}
+.characGroup .skills {
+  position: relative;
+  margin-top: 80px;
+}
+.characGroup .skills h5 {
+  text-align: center;
+  font-size: 24px;
+  line-height: 50px;
+}
+.characGroup .skills .artgroup {
+  text-align: center;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+.characGroup .skills .artgroup article {
+  padding: 10px;
+  border: 5px solid #384249;
+  border-radius: 5px;
+  transition: 0.35s;
+  width: calc(24% - 20px);
+  margin: 10px;
+  position: relative;
+}
+.characGroup .skills .artgroup article h6 {
+  font-size: 16px;
+}
+.characGroup .skills .artgroup article:hover {
+  border-color: crimson;
+}
+.characGroup .skills .artgroup article img {
+  width: 100%;
+}
+.characGroup .skills .artgroup article .text {
+  position: absolute;
+  width: 150%;
+  bottom: calc(100% + 30px);
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: #000;
+  padding: 20px;
+  z-index: 10;
+  border-top: 2px solid crimson;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.3s;
+}
+.characGroup .skills .artgroup article:hover .text {
+  opacity: 1;
+  visibility: visible;
+}
+.characGroup .skills .artgroup article .text:after {
+  content: '';
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  background-color: #000;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 10px) rotate(45deg);
+  z-index: 2;
+}
+.characGroup .skills .artgroup article .text p {
+  font-size: 16px;
+  color: #fff;
+  line-height: 1.6em;
+  margin-top: 0;
+}
+/* content_baseCharacterWrap_survivor */
+.survivorGroup .claudette {
+  background-image: url('../img/claudette-bg.jpg');
+}
+.survivorGroup .bill {
+  background-image: url('../img/bill-bg.jpg');
+}
+.survivorGroup .meg {
+  background-image: url('../img/meg-bg.jpg');
+}
+.survivorGroup > div:nth-child(3) .intro img {
+  width: 35%;
+  left: 10%;
+}
+.bill .intro p,
+.bill .intro .details {
+  text-align: left;
+  margin-left: 0;
+}
+.survivorGroup > div:nth-child(1) h4 {
+  color: #a0aadf;
+}
+.survivorGroup > div:nth-child(2) h4 {
+  color: #787a81;
+}
+.survivorGroup > div:nth-child(3) h4 {
+  color: #bbe1f9;
+}
+/* content_baseCharacterWrap_showhide */
+.characGroup {
+  position: relative;
+}
+.killerGroup,
+.survivorGroup {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  opacity: 0;
+  visibility: hidden;
+  transition: 0.5s;
+}
+.killerGroup.focus,
+.survivorGroup.focus {
+  position: static;
+  opacity: 1;
+  visibility: visible;
+}
+/* ########## content_learn-playWrap ########## */
+.learn-playWrap {
+  padding: 150px 0;
+}
+.learn-play {
+  padding: 50px 0;
+}
+.learn-play article {
+  margin-top: 50px;
+  overflow: hidden;
+}
+.killer article > div {
+  width: 50%;
+  float: left;
+}
+.survivor article > div {
+  width: 50%;
+  float: right;
+}
+.learn-play article .texts {
+  height: auto;
+}
+.learn-play.killer article .texts {
+  padding-right: 50px;
+}
+.learn-play.survivor article .texts {
+  padding-left: 50px;
+}
+.learn-play.killer article .texts,
+.learn-play.survivor article .texts {
+  position: relative;
+}
+.learn-play.killer article .texts:before,
+.learn-play.survivor article .texts:before {
+  content: '';
+  width: 5px;
+  height: 350px;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: crimson;
+}
+.learn-play.killer article .texts:before {
+  right: 0;
+}
+.learn-play.survivor article .texts:before {
+  left: 0;
+}
+.learn-play {
+  position: relative;
+}
+.learn-play article .texts span {
+  color: crimson;
+  font-weight: 900;
+  font-size: 24px;
+}
+.survivor article .texts span {
+  color: dodgerblue;
+}
+.learn-play article .texts em {
+  display: block;
+  font-style: normal;
+}
+.learn-play article .texts p {
+  margin-top: 25px;
+  margin-bottom: 50px;
+  font-weight: 300;
+  color: #ddd;
+}
+.learn-play input[name=killer-rule],
+.learn-play input[name=survivor-rule] {
+  display: none;
+}
+.learn-play label {
+  text-align: center;
+  font-size: 20px;
+  text-transform: uppercase;
+  font-weight: 700;
+  width: calc(33.33% - 20px);
+  margin: 0 10px;
+  float: left;
+  height: 157px;
+  padding-top: 45px;
+  position: relative;
+  cursor: pointer;
+  opacity: 0.3;
+  transition: 0.5s;
+}
+.learn-play label:hover {
+  opacity: 0.5;
+}
+.learn-play label em {
+  display: block;
+  font-style: normal;
+}
+.learn-play label:before {
+  content: '';
+  width: 125px;
+  height: 100%;
+  position: absolute;
+  top: 50%;
+  background: url('../img/grade.png') no-repeat center center;
+  background-size: cover;
+  z-index: -1;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+.learn-play input[name=killer-rule]:nth-child(1):checked ~ .texts .btns-gameplay label:nth-child(1) {
+  opacity: 1;
+}
+.learn-play input[name=killer-rule]:nth-child(2):checked ~ .texts .btns-gameplay label:nth-child(2) {
+  opacity: 1;
+}
+.learn-play input[name=killer-rule]:nth-child(3):checked ~ .texts .btns-gameplay label:nth-child(3) {
+  opacity: 1;
+}
+.learn-play input[name=survivor-rule]:nth-child(1):checked ~ .texts .btns-gameplay label:nth-child(1) {
+  opacity: 1;
+}
+.learn-play input[name=survivor-rule]:nth-child(2):checked ~ .texts .btns-gameplay label:nth-child(2) {
+  opacity: 1;
+}
+.learn-play input[name=survivor-rule]:nth-child(3):checked ~ .texts .btns-gameplay label:nth-child(3) {
+  opacity: 1;
+}
+.learn-playWrap .playing {
+  overflow: hidden;
+}
+.videoGroup {
+  width: 300%;
+  display: flex;
+  transition: 0.35s;
+}
+.videoGroup div {
+  width: 33.33%;
+  padding: 0 70px;
+}
+.videoGroup div video {
+  width: 100%;
+}
+.videoGroup div p {
+  text-align: center;
+  font-size: 16px;
+  font-weight: 300;
+  margin-top: 25px;
+  color: gray;
+  padding: 0 10px;
+}
+.learn-play input[name=killer-rule]:nth-of-type(1):checked ~ .playing .videoGroup {
+  transform: translateX(0);
+} 
+.learn-play input[name=killer-rule]:nth-of-type(2):checked ~ .playing .videoGroup {
+  transform: translateX(-33.33%);
+} 
+.learn-play input[name=killer-rule]:nth-of-type(3):checked ~ .playing .videoGroup {
+  transform: translateX(-66.66%);
+}
+.learn-play input[name=survivor-rule]:nth-of-type(1):checked ~ .playing .videoGroup {
+  transform: translateX(0);
+} 
+.learn-play input[name=survivor-rule]:nth-of-type(2):checked ~ .playing .videoGroup {
+  transform: translateX(-33.33%);
+} 
+.learn-play input[name=survivor-rule]:nth-of-type(3):checked ~ .playing .videoGroup {
+  transform: translateX(-66.66%);
+}
+.learn-play .basics:nth-child(2) {
+  border: 5px solid gold;
+}
+.learn-play .basics:nth-child(2) .btns-gameplay {
+  border: 5px solid dodgerblue;
+}
+.btns-gameplay .playing {
+  border: 5px solid pink;
+}
+/* ########## content_mapWrap ########## */
+.map {
+  position: relative;
+}
+.map:before {
+  width: 100%;
+  height: 100%;
+  content: '';
+  position: absolute;
+  background: url('../img/bgImg.jpg') no-repeat center center;
+  background-size: cover;
+  background-attachment: fixed;
+  z-index: -1;
+  top: 0;
+  left: 0;
+}
+.map section {
+  text-align: center;
+  margin-top: 50px;
+}
+.map article {
+  display: inline-block;
+  width: calc(48% - 20px);
+  margin: 20px;
+}
+.map article .imgGroup {}
+.map article .imgGroup img {
+  width: 100%;
+  display: block;
+}
+.map article .texts {
+  background-color: #000;
+  padding: 10px 30px 20px 30px;
+  text-align: left;
+  margin-top: -1px;
+}
+.map article .texts h4 {
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 28px;
+  line-height: 50px;
+}
+.map article .texts h5 {
+  text-transform: uppercase;
+  color: #758c9a;
+  font-size: 20px;
+  line-height: 50px;
+  font-weight: 500;
+  padding-left: 50px;
+  position: relative;
+}
+.map article .texts h5:before {
+  content: '';
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  background: url('../img/chapter.png') no-repeat center center / 80%;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+.map article .texts p {
+  font-weight: 300;
+  color: gray;
+}
+.imgGroup .slick-arrow {
+  display: block;
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  text-indent: -9999px;
+  background: transparent;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+}
+.imgGroup .slick-prev {
+  left: 0;
+  z-index: 1;
+}
+.imgGroup .slick-next {
+  right: 0;
+}
+.imgGroup .slick-arrow:before {
+  font-family: xeicon;
+  position: absolute;
+  color: #fff;
+  width: 25px;
+  height: 25px;
+  font-size: 18px;
+  line-height: 25px;
+  background-color: crimson;
+  border-radius: 50%;
+  text-indent: -1px;
+}
+.imgGroup .slick-prev:before {
+  content: '\e93c';
+  left: 10px;
+}
+.imgGroup .slick-next:before {
+  content: '\e93f';
+  right: 10px;
+}
+.imgGroup ul.slick-dots {
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-between;
+  margin: 0;
+  bottom: 5px;
+}
+.imgGroup .slick-dots li {
+  margin: 0 10px;
+  cursor: pointer;
+}
+.imgGroup .slick-dots li.slick-active {
+  color: crimson;
+}
+.imgGroup .slick-dots li button {
+  display: none;
+}
+/* ########## content_sign-upWrap ########## */
+.sign-upWrap {
+  background: url('../img/bgImg03.jpg') no-repeat center center;
+  background-size: cover;
+}
+.sign-upWrap header {
+  text-align: left;
+}
+.sign-up header h2 {
+  font-size: 48px;
+  line-height: 50px;
+}
+.sign-up header h2 span {
+  display: block;
+  color: crimson;
+}
+.sign-up header p {
+  margin-top: 25px;
+  width: 60%;
+}
+.sign-up section {
+  margin-top: 50px;
+  width: auto;
+  position: relative;
+}
+.sign-up .texts {
+  width: 50%;
+}
+.sign-up .texts h4 {
+  font-size: 18px;
+  line-height: 25px;
+  margin-bottom: 10px;
+}
+.sign-up .texts > input {
+  height: 50px;
+  padding: 10px;
+  font-size: 18px;
+}
+.sign-up .texts input[type=email] {
+  border: 1px solid white;
+  background: transparent;
+  margin-right: -5px;
+  color: #fff;
+  width: 350px;
+}
+.sign-up .texts input[type=email]::placeholder {
+  opacity: 1;
+  transition: 0.35s;
+}
+.sign-up .texts input[type=email]:focus::placeholder {
+  opacity: 0;
+  visibility: hidden;
+}
+.sign-up .texts input[type=button] {
+  cursor: pointer;
+  color: white;
+  background-color: crimson;
+  width: 150px;
+}
+.sign-up .texts input[type=checkbox] {
+  background: blue;
+  display: none;
+}
+.sign-up .texts label {
+  display: block;
+  color: #919090;
+  font-weight: 300;
+  font-size: 16px;
+  margin: 25px 0;
+  padding-left: 30px;
+  position: relative;
+}
+.sign-up .texts label:before {
+  content: '\ea0e';
+  color: #fff;
+  font-family: xeicon;
+  font-size: 24px;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+.sign-up .texts input[type=checkbox]:checked + label[for=chk-sign]:before {
+  content: '\e92e';
+}
+.sign-up .texts p {
+  font-weight: 300;
+  color: #919090;
+  font-size: 16px;
+  padding: 25px 0;
+  border-top: 1px solid #919090;
+}
+.sign-up .texts p a {
+  text-decoration: underline;
+  color: gold;
+}
+.sign-up .imgGroup {
+  width: 50%;
+  height: 400px;
+  position: absolute;
+  right: 0;
+  top: -20%;
+}
+.sign-up .imgGroup img {
+  position: absolute;
+}
+.sign-up .imgGroup img.front {
+  right: 0;
+  animation: aftermoving 5s linear infinite;
+}
+.sign-up .imgGroup img.before {
+  left: 0;
+  animation: beforemoving 5s linear infinite;
+}
+/* ########## footer ########## */
+footer {}
+footer p {
+  color: gray;
+  text-align: center;
+  width: 60%;
+  margin: 0 auto;
+}
+@keyframes opacity {
+  0% {
+    filter: invert(0.7);
+  }
+  50% {
+    filter: invert(0.2);
+    opacity: 1;
+  }
+  100% {
+    filter: invert(0.7);
+  }
+}
+@keyframes totop {
+  0% {
+    opacity: 0;
+    margin-top: 150px;
+  }
+  100% {
+    opacity: 0.7;
+    margin-top: 50px;
+  }
+}
+@keyframes scale {
+  0% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(0.98);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+@keyframes beforemoving {
+  0% {
+    transform: translateY(0) rotate(-15deg);
+  }
+  25% {
+    transform: translateY(-17px) rotate(-15deg);
+  }
+  50% {
+    transform: translateY(-42px) rotate(-15deg);
+  }
+  75% {
+    transform: translateY(-17px) rotate(-15deg);
+  }
+  100% {
+    transform: translateY(0) rotate(-15deg);
+  }
+}
+@keyframes aftermoving {
+  0% {
+    transform: scale(0.7) rotate(15deg) translate(110px, 0);
+  }
+  25% {
+    transform: scale(0.7) rotate(15deg) translate(110px, -10px);
+  }
+  50% {
+    transform: scale(0.7) rotate(15deg) translate(110px, -30px);
+  }
+  75% {
+    transform: scale(0.7) rotate(15deg) translate(110px, -10px);
+  }
+  100% {
+    transform: scale(0.7) rotate(15deg) translate(110px, 0);
+  }
+}

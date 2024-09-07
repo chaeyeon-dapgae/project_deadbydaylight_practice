@@ -1,0 +1,723 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dead By Daylight</title>
+    <link rel="icon" href="img/symbol.png" />
+    <script src="https://code.jquery.com/jquery-latest.min.js"></script>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css"/>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <script src="js/custom.js"></script>
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/responsive.css">
+  </head>
+  <body>
+    <div class="dbdWrap">
+      <!-- ########## header ########## -->
+      <div class="hdrWrap">
+        <header></header>
+      </div>
+      <!-- ########## mnWrap ########## -->
+      <div class="mnWrap">
+        <main>
+          <div class="logo">
+            <img src="img/symbol.png" alt="DeadByDaylihgt Symbol Logo" />
+          </div>
+          <div class="heading">
+            <a href="#none">Buy the main game</a>
+          </div>
+        </main>
+      </div>
+      <!-- ########## banWrap ########## -->
+      <div class="banWrap">
+        <div class="banner">
+          <div class="text">
+            <img src="img/logo.png" alt="DeadByDaylihgt Logo" />
+            <p>Welcome to the deadly game of hide and seek</p>
+          </div>
+        </div>
+      </div>
+      <!-- ########## content_playerWrap ########## -->
+      <div class="playerWrap">
+        <div class="content player">
+          <header>
+            <h3>killer <span>vs</span> survivor</h3>
+          </header>
+          <section>
+            <div class="btns-player">
+              <a href="#none" data-content="killerPlayer" class="focus">play as<span>the killer</span></a>
+              <a href="#none" data-content="survivorPlayer">play as<span>a survivor</span></a>
+            </div>
+            <article>
+              <div class="play-killer focus" id="killerPlayer">
+                <img src="img/scream.png" alt="scream killer" />
+              </div>
+            </article>
+            <article>
+              <div class="play-survivor" id="survivorPlayer">
+                <img src="img/survive.png" alt="survivors" />
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+      <!-- ########## content_baseCharacterWrap ########## -->
+      <div class="base-characterWrap">
+        <div class="content base-character">
+          <header>
+            <h3>base game character</h3>
+            <p>1 Killer. 4 Survivors. Pick a Side</p>
+          </header>
+          <div class="btns-character">
+            <button data-content="btn-killer" class="focus">killers</button>
+            <button data-content="btn-survivor">survivors</button>
+          </div>
+          <div class="characGroup">
+            <div id="btn-killer" class="killerGroup focus">
+              <div class="killer huntress">
+                <section class="intro">
+                  <img src="img/huntress-main.png" alt="The Huntress" />
+                  <div class="texts">
+                    <h4>The Huntress</h4>
+                    <p>
+                      Armed with throwable hatchets, The Huntress is a constant
+                      threat to Survivors, even those at a great distance. With
+                      patience and precision, chases can end as quickly as they
+                      begin. Predict Survivor movement and let your hatchet fly
+                      - there's nothing quite like the rewarding sound of a
+                      target struck.
+                    </p>
+                    <div class="details">
+                      <div class="role">Role<span>Killer</span></div>
+                      <div class="hard">Difficulty<span>Medium</span></div>
+                      <div class="chapter">
+                        Chapter<span>A Luulaby for the Dark</span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="skills">
+                  <h5>Power and Perks</h5>
+                  <div class="artgroup">
+                    <article>
+                      <img src="img/huntress-power.png" alt="hunting hatchets Skill" />
+                      <h6>HUNTING HATCHETS</h6>
+                      <div class="text">
+                        <p>
+                          Begin the trial with 5 Hunting Hatchets, which can be wound up and thrown with deadly precision. Hatchets can be refilled at lockers.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/huntress-perk01.png" alt="beast of prey Perk" />
+                      <h6>BEAST OF PREY</h6>
+                      <div class="text">
+                        <p>
+                          Lose your Terror Radius and Red Stain upon entering Bloodlust, making you difficult to predict while in a chase.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/huntress-perk02.png" alt="territorial imperative Perk" />
+                      <h6>TERRITORIAL IMPERATIVE</h6>
+                      <div class="text">
+                        <p>
+                          When at a distance, view the aura of any Survivor entering the basement, making an already dangerous place even deadlier.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/huntress-perk03.png" alt="Hex: huntress Luulaby Perk" />
+                      <h6>HEX: HUNTRESS LULLABY</h6>
+                      <div class="text">
+                        <p>
+                          Spawn a Hex Totem. Receive 1 token upon hooking a Survivor, with a max of 5. Each token increases the difficulty of skill checks for Survivors, with 5 completely removing the audio cue. Failed skill checks cause a severe regression penalty. All effects end when the Totem is cleansed.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+              </div>
+              <div class="killer nurse">
+                <section class="intro">
+                  <img src="img/nurse-main.png" alt="The Nurse" />
+                  <div class="texts">
+                    <h4>The Nurse</h4>
+                    <p>
+                      Using her Blink ability, The Nurse can teleport great
+                      distances in moments, predicting and cutting off Survivor
+                      routes. A powerful process best honed by experience,
+                      careless Blinks are punished with a wave of fatigue. The
+                      epitome of high risk, high reward, The Nurse can end
+                      chases with surgical precision.
+                    </p>
+                    <div class="details">
+                      <div class="role">Role<span>Killer</span></div>
+                      <div class="hard">Difficulty<span>Very Hard</span></div>
+                      <div class="chapter">
+                        Chapter<span>The Last Breath</span>
+                      </div>
+                    </div>
+                  </div>
+                </section>
+                <section class="skills">
+                  <h5>Power and Perks</h5>
+                  <div class="artgroup">
+                    <article>
+                      <img src="img/nurse-power.png" alt="spencer's last breath" />
+                      <h6>SPENCER’S LAST BREATH</h6>
+                      <div class="text">
+                        <p>
+                          Charge a Blink to teleport a great distance, quickly gaining the ability to charge a second Blink. Once all charged Blinks are expended, The Nurse may elect to attack before she is briefly struck with fatigue.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/nurse-perk01.png" alt="stridor Skill" />
+                      <h6>STRIDOR</h6>
+                      <div class="text">
+                        <p>
+                          Hear Survivors breathing and grunts of pain louder than ever.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/nurse-perk02.png" alt="thanatophobia Skill" />
+                      <h6>THANATOPHOBIA</h6>
+                      <div class="text">
+                        <p>
+                          Each injured Survivor inflicts a penalty to repairing, cleansing, and sabotaging speeds to all Survivors.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/nurse-perk03.png" alt="nurse's calling Skill" />
+                      <h6>A NURSE'S CALLING</h6>
+                      <div class="text">
+                        <p>
+                          Reveal the auras of all healing Survivors within your vicinity.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+              </div>
+              <div class="killer trapper">
+                <section class="intro">
+                  <img src="img/trapper-main.png" alt="The Trapper" />
+                  <div class="texts">
+                    <h4>The Trapper</h4>
+                    <p>
+                      Armed with a bag of Bear Traps, The Trapper specializes in
+                      catching unsuspecting Survivors. By placing traps in
+                      high-traffic areas and thick patches of grass, he creates
+                      a deadly area that forces Survivors to move with caution.
+                      When dealing with The Trapper, a simple misstep can prove
+                      fatal.
+                    </p>
+                    <div class="details">
+                      <div class="role">Role<span>Killer</span></div>
+                      <div class="hard">Difficulty<span>Medium</span></div>
+                    </div>
+                  </div>
+                </section>
+                <section class="skills">
+                  <h5>Power and Perks</h5>
+                  <div class="artgroup">
+                    <article>
+                      <img src="img/trapper-power.png" alt="bear trap Power" />
+                      <h6>BEAR TRAP</h6>
+                      <div class="text">
+                        <p>
+                          Begin a trial with 2 Bear Traps, with 6 additional Bear Traps randomly spawning throughout the map. The Trapper can only carry 2 Bear Traps at a time. Survivors can be caught in a Bear Trap and attempt to escape or be freed by a teammate. If a Survivor is healthy, being caught in a Bear Trap will put them in the injured state.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/trapper-perk01.png" alt="unnerving presence Skill" />
+                      <h6>UNNERVING PRESENCE</h6>
+                      <div class="text">
+                        <p>
+                          Speed up the process of breaking pallets, destroying breakable walls, and damaging generators.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/trapper-perk02.png" alt="brutal strength Skill" />
+                      <h6>BRUTAL STRENGTH</h6>
+                      <div class="text">
+                        <p>
+                          Speed up the process of breaking pallets, destroying breakable walls, and damaging generators.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/trapper-perk03.png" alt="agitation Skill" />
+                      <h6>AGITATION</h6>
+                      <div class="text">
+                        <p>
+                          Allows The Trapper to move faster and cover longer distances while carrying Survivors. Carrying Survivors also increases your Terror Radius.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+              </div>
+            </div>
+            <div id="btn-survivor" class="survivorGroup">
+              <div class="survivor claudette">
+                <section class="intro">
+                  <img
+                    src="img/claudette-main.png"
+                    alt="A CLAUDETTE MOREL Survivor"
+                  />
+                  <div class="texts">
+                    <h4>CLAUDETTE MOREL</h4>
+                    <p>
+                      Claudette understands the value of altruism, using her
+                      aptitude for botany to ensure her teammates are prepared
+                      for the challenges ahead. An expert healer to herself and
+                      others, Claudette’s supportive presence is always welcome.
+                    </p>
+                    <div class="details">
+                      <div class="role">Role<span>Survivor</span></div>
+                    </div>
+                  </div>
+                </section>
+                <section class="skills">
+                  <h5>Perks</h5>
+                  <div class="artgroup">
+                    <article>
+                      <img src="img/claudette-perk01.png" alt="empathy Skill" />
+                      <h6>EMPATHY</h6>
+                      <div class="text">
+                        <p>
+                          Reveal the auras of all injured and dying Survivors in your vicinity, allowing you to efficiently heal teammates in need.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/claudette-perk02.png" alt="botany knowledge Skill" />
+                      <h6>BOTANY KNOWLEDGE</h6>
+                      <div class="text">
+                        <p>
+                          Increase healing speed and healing item efficiency, saving precious time.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/claudette-perk03.png" alt="self-care Skill" />
+                      <h6>SELF-CARE</h6>
+                      <div class="text">
+                        <p>
+                          Unlock the ability to self-heal without a healing item, albeit at a reduced speed. Increases the efficiency of healing items while self-healing.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+              </div>
+              <div class="survivor bill">
+                <section class="intro">
+                  <img
+                    src="img/bill-main.png"
+                    alt="A William 'bill' overbeck Character"
+                  />
+                  <div class="texts">
+                    <h4>WILLIAM "BILL" OVERBECK</h4>
+                    <p>
+                      Hardened by years of experience, Bill Overbeck knows that
+                      survival rarely comes without sacrifice. No matter the
+                      cost, he’ll make sure his teammates live to fight another
+                      day. It wouldn’t be the first time he was left for dead.
+                    </p>
+                    <div class="details">
+                      <div class="role">Role<span>Survivor</span></div>
+                    </div>
+                  </div>
+                </section>
+                <section class="skills">
+                  <h5>Perks</h5>
+                  <div class="artgroup">
+                    <article>
+                      <img src="img/bill-perk01.png" alt="Left behind Perk" />
+                      <h6>LEFT BEHIND</h6>
+                      <div class="text">
+                        <p>
+                          When you’re the last Survivor remaining in the trial, reveal the aura of the Hatch while in its vicinity.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/bill-perk02.png" alt="borrowed time Perk" />
+                      <h6>BORROWED TIME</h6>
+                      <div class="text">
+                        <p>
+                          After rescuing a Survivor from the hook, that Survivor gains the Endurance status effect -- the ability to safely take a hit for a brief duration. Rather than being downed, that Survivor must instead take time to mend a Deep Wound.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/bill-perk03.png" alt="unbreakable Perk" />
+                      <h6>UNBREAKABLE</h6>
+                      <div class="text">
+                        <p>
+                          Past battles have taught you a thing or two about survival. Once per trial, recover from being downed without aid from a teammate.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+              </div>
+              <div class="survivor meg">
+                <section class="intro">
+                  <img src="img/meg-main.png" alt="A MEG THOMAS Character" />
+                  <div class="texts">
+                    <h4>MEG THOMAS</h4>
+                    <p>
+                      Driven by reckless courage, the athletic Meg Thomas has
+                      never been afraid to push her limits. Prone to stepping up
+                      in the clutch, Meg gets a thrill out of goading Killers
+                      into lengthy chases, buying essential time for her
+                      teammates.
+                    </p>
+                    <div class="details">
+                      <div class="role">Role<span>Survivor</span></div>
+                    </div>
+                  </div>
+                </section>
+                <section class="skills">
+                  <h5>Perks</h5>
+                  <div class="artgroup">
+                    <article>
+                      <img src="img/meg-perk01.png" alt="quick & quiet Perk" />
+                      <h6>QUICK & QUIET</h6>
+                      <div class="text">
+                        <p>
+                          The noise made when quickly vaulting obstacles and hiding in lockers is silenced entirely, disoriening a Killer mid-chase.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/meg-perk02.png" alt="sprint burst Perk" />
+                      <h6>SPRINT BURST</h6>
+                      <div class="text">
+                        <p>
+                          The moment you begin running, break into a sprint and gain a burst of speed for a brief duration. Using Sprint Burst leaves you Exhausted, and thus, this perk cannot be triggered while Exhausted.
+                        </p>
+                      </div>
+                    </article>
+                    <article>
+                      <img src="img/meg-perk03.png" alt="adrenaline Perk" />
+                      <h6>ADRENALINE</h6>
+                      <div class="text">
+                        <p>
+                          When the exit gates are powered, instantly heal one health state and gain a burst of speed. If hooked or carried by the Killer when Adrenaline activates, heal the moment you are freed. Causes the Exhausted status effect, though Adrenaline will still activate if Exhausted from a different perk.
+                        </p>
+                      </div>
+                    </article>
+                  </div>
+                </section>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- ########## content_learn-playWrap ########## -->
+      <div class="learn-playWrap">
+        <div class="content learn-play killer">
+          <header>
+            <h3>learn to play</h3>
+          </header>
+          <section>
+            <article>
+              <input type="radio" name="killer-rule" id="killer-gameplay1" checked/>
+              <input type="radio" name="killer-rule" id="killer-gameplay2" />
+              <input type="radio" name="killer-rule" id="killer-gameplay3" />
+              <div class="texts">
+                <span>Killer</span> Gameplay
+                <em>basics</em>
+                <p>
+                  Though every Killer is unique their goals remain the same.
+                  Pick Survivors off one-by-one and sacrifice them to The
+                  Entity. Here are the basics to get you started.
+                </p>
+                <div class="btns-gameplay">
+                  <label for="killer-gameplay1"> <em>1</em>hunt </label>
+                  <label for="killer-gameplay2"> <em>2</em>chase </label>
+                  <label for="killer-gameplay3"> <em>3</em>hook </label>
+                </div>
+              </div>
+              <div class="playing killer-play">
+                <div class="videoGroup">
+                  <div>
+                    <video src="img/killer-play01.mp4" autoplay loop muted></video>
+                    <p>
+                      Survivors need to repair generators around the map to
+                      power up the Exit Gates and escape. Patrol and damage
+                      these generators as you search for your next victim.
+                      Keep an eye out for noise alerts created when Survivors
+                      fail generator and healing skill checks or perform
+                      rushed actions like vaulting through windows.
+                    </p>
+                  </div>
+                  <div>
+                    <video src="img/killer-play02.mp4" autoplay loop muted></video>
+                    <p>
+                      As Survivors run for their lives, they’ll leave scratch marks for you to follow. Should the trail go cold, check nearby lockers where they may be hiding. Survivors will try to elude you by vaulting through windows, blinding you with flashlights, and dropping pallets in your path. Think ahead, close the distance, and strike.
+                    </p>
+                  </div>
+                  <div>
+                    <video src="img/killer-play03.mp4" autoplay loop muted></video>
+                    <p>
+                      Striking a Survivor once puts them into the Injured State. Twice, and they enter the Dying State, allowing you to pick them up, carry them to one of many sacrificial hooks, and impale them. Should they struggle on the hook for too long, fail to be saved by an ally, or rescued and hooked a total of 3 times, the sacrifice is complete.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+        <div class="content learn-play survivor">
+          <header>
+            <h3>learn to play</h3>
+          </header>
+          <section>
+            <article>
+              <input type="radio" name="survivor-rule" id="survivor-gameplay1" checked/>
+              <input type="radio" name="survivor-rule" id="survivor-gameplay2" />
+              <input type="radio" name="survivor-rule" id="survivor-gameplay3" />
+              <div class="texts">
+                <span>Survivor</span> Gameplay
+                <em>basics</em>
+                <p>
+                  Survivors may play different roles within a team, but their shared goal never changes. Evade the Killer and escape the trial. Here are the basics to get you started.
+                </p>
+                <div class="btns-gameplay">
+                  <label for="survivor-gameplay1"> <em>1</em>repair </label>
+                  <label for="survivor-gameplay2"> <em>2</em>evade </label>
+                  <label for="survivor-gameplay3"> <em>3</em>escape </label>
+                </div>
+              </div>
+              <div class="playing survivor-play">
+                <div class="videoGroup">
+                  <div>
+                    <video src="img/survivor-play01.mp4" autoplay loop muted></video>
+                    <p>
+                      To power up the Exit Gates and escape, Survivors must repair 5 of the 7 generators located throughout the map. Skill checks will appear as you work on generators. Fail one and the Killer will be alerted, and your repair progress set back. Multiple Survivors working on the same generator at once will speed up repairs.
+                    </p>
+                  </div>
+                  <div>
+                    <video src="img/survivor-play02.mp4" autoplay loop muted></video>
+                    <p>
+                      Most Killers are faster than Survivors. Avoid running in a straight line. Instead, drop pallets in the Killer’s path, blind them with a flashlight, or vault through windows to get away. Running will leave scratch marks for them to follow. Walk, crouch, or hide in lockers to avoid detection. The longer the chase, the more time your allies have to focus on generators.
+                    </p>
+                  </div>
+                  <div>
+                    <video src="img/survivor-play03.mp4" autoplay loop muted></video>
+                    <p>
+                      If struck twice by the Killer you’ll enter the Dying State where you can be picked up and impaled on a sacrificial hook. Attempt to wiggle free while being carried. If hooked, you’ll need to rely on your allies to rescue you before the sacrifice is complete. Help each other stay alive, repair generators, and power up the Exit Gates to escape before time runs out.
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+      <!-- ########## content_mapWrap ########## -->
+      <div class="mapWrap">
+        <div class="content map">
+          <header>
+            <h3>realms and maps</h3>
+          </header>
+          <section>
+            <article>
+              <div class="imgGroup">
+                <div class="image"><img src="img/map01-01.jpg" alt=""></div>
+                <div class="image"><img src="img/map01-02.jpg" alt=""></div>
+                <div class="image"><img src="img/map01-03.jpg" alt=""></div>
+                <div class="image"><img src="img/map01-04.jpg" alt=""></div>
+                <div class="image"><img src="img/map01-05.jpg" alt=""></div>
+                <div class="image"><img src="img/map01-06.jpg" alt=""></div>
+              </div>
+              <div class="texts">
+                <h4>crotus prenn asylum</h4>
+                <h5>the last breath</h5>
+                <p>
+                  When the asylum burned to a smouldering ruin, the ashes of the dead seeped into the soil. Faint traces of their sickly wails still linger in the air.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="imgGroup">
+                <div class="image"><img src="img/map02-01.jpg" alt=""></div>
+                <div class="image"><img src="img/map02-02.jpg" alt=""></div>
+                <div class="image"><img src="img/map02-03.jpg" alt=""></div>
+                <div class="image"><img src="img/map02-04.jpg" alt=""></div>
+                <div class="image"><img src="img/map02-05.jpg" alt=""></div>
+              </div>
+              <div class="texts">
+                <h4>HADDONFIELD</h4>
+                <h5>halloween</h5>
+                <p>
+                  Once an idyllic picture of suburban life, the simple street of Lampkin Lane was forever tarnished by unspeakable horror. The Shape of evil has returned -- and this is his home.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="imgGroup">
+                <div class="image"><img src="img/map03-01.jpg" alt=""></div>
+                <div class="image"><img src="img/map03-02.jpg" alt=""></div>
+                <div class="image"><img src="img/map03-03.jpg" alt=""></div>
+                <div class="image"><img src="img/map03-04.jpg" alt=""></div>
+              </div>
+              <div class="texts">
+                <h4>BACKWATER SWAMP</h4>
+                <h5>of flesh and mud</h5>
+                <p>
+                  Decrepit shacks hide cells packed with bloated corpses, their fetid stench barely masked by the bog. Those lost in Backwater Swamp seldom return in one piece.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="imgGroup">
+                <div class="image"><img src="img/map04-01.jpg" alt=""></div>
+                <div class="image"><img src="img/map04-02.jpg" alt=""></div>
+                <div class="image"><img src="img/map04-03.jpg" alt=""></div>
+                <div class="image"><img src="img/map04-04.jpg" alt=""></div>
+                <div class="image"><img src="img/map04-05.jpg" alt=""></div>
+                <div class="image"><img src="img/map04-06.jpg" alt=""></div>
+              </div>
+              <div class="texts">
+                <h4>LÉRY'S MEMORIAL INSTITUTE</h4>
+                <h5>spark of madness</h5>
+                <p>
+                  A former governmental black site where brilliant minds explored depraved innovations in electroshock and trauma-based therapy. The Doctor will see you now.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="imgGroup">
+                <div class="image"><img src="img/map05-01.jpg" alt=""></div>
+                <div class="image"><img src="img/map05-02.jpg" alt=""></div>
+                <div class="image"><img src="img/map05-03.jpg" alt=""></div>
+                <div class="image"><img src="img/map05-04.jpg" alt=""></div>
+                <div class="image"><img src="img/map05-05.jpg" alt=""></div>
+                <div class="image"><img src="img/map05-06.jpg" alt=""></div>
+              </div>
+              <div class="texts">
+                <h4>SPRINGWOOD</h4>
+                <h5>a nightmare on elm street</h5>
+                <p>
+                  Some nightmares feel so real -- especially in Springwood. Forever tainted by its heinous past, even the innocent preschool has been defiled by unspeakable misery.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="imgGroup">
+                <div class="image"><img src="img/map06-01.jpg" alt=""></div>
+                <div class="image"><img src="img/map06-02.jpg" alt=""></div>
+                <div class="image"><img src="img/map06-03.jpg" alt=""></div>
+                <div class="image"><img src="img/map06-04.jpg" alt=""></div>
+                <div class="image"><img src="img/map06-05.jpg" alt=""></div>
+                <div class="image"><img src="img/map06-06.jpg" alt=""></div>
+                <div class="image"><img src="img/map06-07.jpg" alt=""></div>
+              </div>
+              <div class="texts">
+                <h4>GIDEON MEAT PLANT</h4>
+                <h5>saw</h5>
+                <p>
+                  The lair of the twisted visionary Jigsaw, hellbent on concluding his life’s work. Each macabre trap tells a story: a cautionary tale of life wasted and perspective gained.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="imgGroup">
+                <div class="image"><img src="img/map07-01.jpg" alt=""></div>
+                <div class="image"><img src="img/map07-02.jpg" alt=""></div>
+                <div class="image"><img src="img/map07-03.jpg" alt=""></div>
+                <div class="image"><img src="img/map07-04.jpg" alt=""></div>
+                <div class="image"><img src="img/map07-05.jpg" alt=""></div>
+                <div class="image"><img src="img/map07-06.jpg" alt=""></div>
+              </div>
+              <div class="texts">
+                <h4>ormond</h4>
+                <h5>darkness among us</h5>
+                <p>
+                  The ski resort at Mount Ormond has long been abandoned. It endures as a favored haunt for rebellious youths seeking to indulge in violent proclivities.
+                </p>
+              </div>
+            </article>
+            <article>
+              <div class="imgGroup">
+                <div class="image"><img src="img/map08-01.jpg" alt=""></div>
+                <div class="image"><img src="img/map08-02.jpg" alt=""></div>
+                <div class="image"><img src="img/map08-03.jpg" alt=""></div>
+                <div class="image"><img src="img/map08-04.jpg" alt=""></div>
+              </div>
+              <div class="texts">
+                <h4>grave of glenvale</h4>
+                <h5>chains of hate</h5>
+                <p>
+                  They say restless ghosts haunt the old Dead Dawg Saloon, victims of a massacre where gang members and civilians were torn apart in a hail of gunfire.
+                </p>
+              </div>
+            </article>
+          </section>
+        </div>
+      </div>
+      <!-- ########## content_sign-upWrap ########## -->
+      <div class="sign-upWrap">
+        <div class="content sign-up">
+          <header>
+            <h2>
+              Sign-up & get 100k
+              <span>Bloodpoints</span>
+            </h2>
+            <p>
+              Get all the latest Dead by Daylight news, updates, deals, and more
+              delivered straight to you inbox.
+            </p>
+          </header>
+          <section>
+            <div class="texts">
+              <h4>Email Adress</h4>
+              <input type="email" placeholder="Enter your email address" />
+              <input type="button" value="sign up" />
+              <input type="checkbox" id="chk-sign" />
+              <label for="chk-sign">
+                Yes, I would like to receive newsletters, information and
+                promotions about Dead By Daylight from Behaviour Interactive
+                Inc. (“BHVR”). I will be able to withdraw my consent at any
+                time.
+              </label>
+              <p>
+                By clicking on Sign Up, I confirm that I am 18 years old or over
+                and that I accept BHVR’s <a href="#none">Privacy Policy</a> and
+                <a href="#none">Terms of Use</a>. Receive the Bloodpoints on
+                November 28th, 2023.
+              </p>
+            </div>
+            <div class="imgGroup">
+              <img class="before" src="img/bloodpoint.png" alt="bloodpoint" />
+              <img class="front" src="img/bloodpoint.png" alt="bloodpoint" />
+            </div>
+          </section>
+        </div>
+      </div>
+      <!-- ########## footer ########## -->
+      <div class="ftrWrap">
+        <footer>
+          <p>
+            © 2015-2023 and BEHAVIOUR, DEAD BY DAYLIGHT and other related
+            trademarks and logos belong to Behaviour Interactive Inc. All rights
+            reserved.
+          </p>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>

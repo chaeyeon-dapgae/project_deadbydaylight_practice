@@ -1,0 +1,228 @@
+/* responsive.css */
+@media (max-width: 767px) {
+  /* banWrap */
+  .banWrap {
+    background-position: 70% center;
+    padding: 100px 10px;
+  }
+  .text img {
+    width: 200px;
+  }
+  .text p {
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin-top: 25px;
+  }
+  /* playerWrap */
+  .playerWrap header h3 span {
+    display: block;
+  }
+  .player section {
+    margin-top: 50px;
+    position: relative;
+  }
+  .btns-player a {
+    width: calc(48% - 10px);
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 25px;
+    margin: 0 5px;
+    padding: 10px;
+  }
+  .player article {
+    width: 100%;
+    margin-top: 50px;
+  }
+  .player article:last-child {
+    position: absolute;
+    bottom: 0;
+  }
+  .player article > div {
+    opacity: 0;
+  }
+  /* baseCharacter Wrap */
+  .characGroup .intro{
+    width: 100%;
+    position: static;
+    text-align: right;
+    height: 100%;
+  }
+  .nurse .intro, 
+  .claudette .intro, 
+  .meg .intro {
+    text-align: left;
+  }
+  .characGroup .intro img {
+    width: 70%;
+    position: static;
+  }
+  .characGroup .intro .texts {
+    padding: 50px 20px;
+    position: static;
+  }
+  .characGroup .texts h4 {
+    position: static;
+    font-size: 36px;
+    display: block;
+    width: 100%;
+    text-align: center;
+  }
+  .characGroup .texts p {
+    width: 100%;
+    text-align: center;
+  }
+  .nurse .intro .texts p,
+  .claudette .texts p,
+  .meg .texts p {
+    text-align: center;
+  }
+  .bill .texts p {
+    text-align: center;
+  }
+  .characGroup .texts .details {
+    text-align: left;
+    margin-top: 50px;
+  }
+  .characGroup .intro .details > div {
+    margin: 0;
+    margin-right: 20px;
+    text-align: left;
+  }
+  .characGroup .intro .details > div:last-child {
+    margin-right: 0;
+  }
+  .characGroup .intro .details > div:before {
+    display: none;
+  }
+  .characGroup .skills {
+    position: static;
+  }
+  .characGroup .skills h5 {
+    font-size: 20px;
+  }
+  .characGroup .skills .artgroup article {
+    width: calc(50% - 20px);
+    border: 5px solid #425054;
+  }
+  .characGroup .skills .artgroup article .text {
+    width: 200%;
+    padding: 20px 10px;
+  }
+  .characGroup .skills .artgroup article:nth-of-type(odd) .text {
+    left: -5px;
+    transform: translateX(0);
+  }
+  .characGroup .skills .artgroup article:nth-of-type(odd) .text:after {
+    left: 10%;
+  }
+  .characGroup .skills .artgroup article:nth-of-type(even) .text {
+    left: calc(-100% + 5px);
+    transform: translateX(0);
+  }
+  .characGroup .skills .artgroup article:nth-of-type(even) .text:after {
+    left: 90%;
+  }
+  .survivorGroup .skills .artgroup article:nth-of-type(3) .text {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+  .survivorGroup .skills .artgroup article:nth-of-type(3) .text:after {
+    left: 50%;
+    transform: translate(-50%, 10px) rotate(45deg);
+  }
+  /* learn-playWrap */
+  .learn-play article {
+    overflow: visible;
+  }
+  .learn-play article > div {
+    width: 100%;
+    float: none;
+  }
+  .learn-play.killer article .texts,
+  .learn-play.survivor article .texts {
+    position: static;
+    padding: 0;
+  }
+  .learn-play.killer article .texts:before,
+  .learn-play.survivor article .texts:before {
+    display: none;
+  }
+  .learn-play .texts {}
+  .learn-play label {
+    font-size: 14px;
+    line-height: 20px;
+    padding-top: 55px;
+  }
+  .learn-play label:before {
+    width: 80px;
+    height: 70%;
+  }
+  .videoGroup div {
+    padding: 0;
+  }
+  .videoGroup div p {
+    text-align: left;
+  }
+  /* content_mapWrap */
+  .map article {
+    width: 100%;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  .map article .texts h4 {
+    font-size: 20px;
+    line-height: 25px;
+  }
+  .map article .texts h5 {
+    font-size: 18px;
+    line-height: 25px;
+    padding-left: 0;
+    margin: 10px 0;
+  }
+  .map article .texts h5:before {
+    display: none;
+  }
+  .map article .texts p {
+    font-size: 16px;
+  }
+  /* content_sign-upWrap */
+  .sign-up header h2 {
+    font-size: 32px;
+  }
+  .sign-up header p {
+    width: 100%;
+  }
+  .sign-up section {
+    padding: 0 10px;
+  }
+  .sign-up .texts {
+    width: 100%;
+  }
+  .sign-up .texts h4 {
+    font-size: 16px;
+    margin-bottom: 5px;
+  }
+  .sign-up .texts input[type=email] {
+    width: 100%;
+    border-bottom: none;
+  }
+  .sign-up .texts input[type=email]::placeholder {
+    font-size: 16px;
+  }
+  .sign-up .texts input[type=button] {
+    width: 100%;
+  }
+  .sign-up .texts label {
+    font-size: 16px;
+  }
+  .sign-up .imgGroup {
+    top: 75%;
+    right: 30%;
+    transform: scale(0.3);
+  }
+  /* footer */
+  footer p {
+    width: 100%;
+  }
+}
